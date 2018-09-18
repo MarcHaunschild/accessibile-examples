@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		Responsive Schriftgrößen
+	</title>
+	<style>
+		h1 {
+			font-size: 2em;
+			text-align: center;
+		}
+
+		@media screen and (min-width: 50em) {
+			h1 {
+				font-size: 4em;
+			}
+		}
+
+		@media screen and (min-width: 90em) {
+			h1 {
+				font-size: calc(2em + 8vw);
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Responsive Schriftgrößen</h1>
+	<p>Die Schriftgröße lässt sich nicht nur für unterschiedliche Bildschirmgrößen festlegen, sie kann dank der Einheit <code>vw</code> auch von der verfügbaren Breite abhängig gemacht werden.</p>
+	<h2>Achtung!</h2>
+	<p>Gerade auf kleinen Bildschirmen sind oft größere Elemente nötig, als auf großen Bildschirmen.</p>
+	<p>Kleine Bildschirme werden vor allem auf mobilen Geräten eingesetzt und Finger sind deutlich größer als ein Mauszeiger, weshalb das Treffen kleiner Schaltflächen schwieriger ist, besonders wenn sich mehrere interaktive Elemente in unmittelbarer Nähe zueinander befinden.</p>
+</body>
+</html>
