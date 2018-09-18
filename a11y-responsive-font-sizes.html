@@ -23,13 +23,16 @@
 				font-size: calc(2em + 8vw);
 			}
 		}
-
 	</style>
 </head>
 
 <body>
-	<h1>Responsive Schriftgrößen</h1>
+	<h1>Responsive Schriftgrößen sind <strong>nicht</strong> barrierefrei</h1>
 	<p>Die Schriftgröße lässt sich nicht nur für unterschiedliche Bildschirmgrößen festlegen, sie kann dank der Einheit <code>vw</code> auch von der verfügbaren Breite abhängig gemacht werden.</p>
+	<h2>Warnung</h2>
+	<p>Vergrößern geht prima, das Problem ist eher, wenn man von em als Einheit für Breiten ausgeht, werden Schriften größer, je kleiner man die wählen möchte (weil der Viewport in em gemessen "größer" wird, es passen halt mehr kleine "m" in denselben Viewport, wenn wenn die "m" kleiner werden).</p>
+	<p>Barrierefreiheit bedeutet aber, dass man Schriften an die eigenen Bedürfnisse anpassen kann — auch wenn die WCAG nur die Vergrößerung vorsieht und überprüft und als success criterion aufgenommen hat. Leider!</p>
+	<p>Hintergrund: es gibt Menschen mit einem sehr kleinen, aber u.U. noch scharfen Gesichtsfeld (Tunnelblick). Diese möchten in dem kleinen Ausschnitt, den sie wahrnehmen können, möglichst mindestens ein Wort sehen. Denen werden dann Schriften aber beim verkleinern der Schrift absurderweise immer größer angezeigt…</p>
 	<h2>Achtung!</h2>
 	<p>Gerade auf kleinen Bildschirmen sind oft größere Elemente nötig, als auf großen Bildschirmen.</p>
 	<p>Kleine Bildschirme werden vor allem auf mobilen Geräten eingesetzt und Finger sind deutlich größer als ein Mauszeiger, weshalb das Treffen kleiner Schaltflächen schwieriger ist, besonders wenn sich mehrere interaktive Elemente in unmittelbarer Nähe zueinander befinden.</p>
