@@ -5,26 +5,41 @@
   <meta charset="utf-8">
   <title>Form marc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Überschrift
+    -----------
+    Schrift: "Roboto", sans-serif
+    Farbe: rgb(0, 140, 214)
+    Größe: 20px
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+    Eingabefelder
+    -------------
+    border-radius: 4px
+    border-color: #ccc
+
+    -->
   <style>
-    label {
-      display: block;
-      margin-top: 1em;
-    }
-    input,
-    textarea,
-    button {
-      border: 1px solid #ccc;
-      border-radius: .25em;
-    }
   </style>
 </head>
 
 <body>
- <!-- Wieso hat blaue Schrift die Klasse ncagreen?
+  <form method="post" id="nca-form">
+    <!-- Wieso hat blaue Schrift die Klasse ncagreen?
       presentational Markup
   -->
-  <h1 class="ncagreen">Kontakt</h1>
-  <form method="post" id="nca-form">
+    <h1 class="ncagreen">Kontakt</h1>
     <div class="select-container">
       <label for="reason">Kontaktgrund</label>
       <select id="reason" class="form-control">
