@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
-  <title>Form marc</title>
+  <title>Zugängliches Formular</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--
-    Überschrift
-    -----------
-    Schrift: "Roboto", sans-serif
-    Farbe: rgb(0, 140, 214)
-    Größe: 20px
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    padding-top: 12px;
-    padding-bottom: 4px;
-    text-align: center;
-    text-transform: uppercase;
 
-
-    Eingabefelder
-    -------------
-    border-radius: 4px
-    border-color: #ccc
-
-    -->
   <style>
+    /* Beschriftungen über das Eingabefeld setzen
+       (funktioniert auch, wenn die Text-Richtung wie in arabischen
+       Seiten von rechts nach links ist) */
+    label {
+      display: block;
+    }
+    /* Selektor um die Container
+       für die unterschiedlichen Eingabe-Typen auszuwählen */
+    form [class$="container"] {
+
+    }
+    form [class$="select"] {
+
+    }
   </style>
 </head>
 
