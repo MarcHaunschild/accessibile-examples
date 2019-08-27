@@ -16,9 +16,11 @@
     /* Selektor um die Container
        für die unterschiedlichen Eingabe-Typen auszuwählen */
     form [class$="container"] {
+      background: #ddd;
 
     }
-    form [class$="select"] {
+    form [class^="select"] {
+      background: #eee;
 
     }
   </style>
@@ -54,7 +56,7 @@
       <label for="messagefield">Ihre Nachricht</label>
       <textarea id="messagefield" rows="5" placeholder="Sag Hallo"></textarea>
     </div>
-    <div class="button">
+    <div class="submit-container">
       <button type="submit" value="SUBMIT" name="submitf-03">
         senden
       </button>
