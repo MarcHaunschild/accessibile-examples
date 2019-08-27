@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Zugängliche Tabelle
+	</title>
+	<style>
+		table, th, td {
+			border: 1px solid #aaa;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Zugängliche Tabelle</h1>
+		<p>Nichts besonderes hier, nur eine Tabelle mit Elementen, die so wie in der Spec beschrieben benutzt werden.</p>
+		
+		<h2>Tabelle mit Spaltenüberschriften</h2>
+		
+		<table>
+			<caption>Zusammenfassung / Beschreibung</caption>
+			<thead>
+				<tr>
+					<th>
+						Stadt
+					</th>
+					<th>
+						Land
+					</th>
+					<th>
+						Fluss
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>
+					Aachen
+				</td>
+				<td>
+					Angola
+				</td>
+				<td>
+					Amazonas
+				</td>
+				</tr>
+				<tr>
+				<td>
+					...
+				</td>
+				<td>
+					...
+				</td>
+				<td>
+					...
+				</td>
+				</tr>
+				<tr>
+				<td>
+					Zuffenhausen
+				</td>
+				<td>
+					Zypern
+				</td>
+				<td>
+					Zschopau
+				</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Tabelle mit Spalten und Zeilenüberschriften</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Datum</th>
+					<th>Temperatur in °C</th>
+					<th>Messtation</th>
+					<th>Erfasser</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1.1.1970</th>
+					<td>23</td>
+					<td>Fürth</td>
+					<td>Willi Winzig</td>
+				</tr>
+				<tr>
+					<th scope="row">1.1.1980</th>
+					<td>24</td>
+					<td>Mainz</td>
+					<td>Maike Munter</td>
+				</tr>
+				<tr>
+					<th scope="row">1.1.1990</th>
+					<td>25</td>
+					<td>Hamburg</td>
+					<td>Klaus Kleinlich</td>
+				</tr>
+				<tr>
+					<th scope="row">1.1.2000</th>
+					<td>26</td>
+					<td>Hamburg</td>
+					<td>Klaus Kleinlich</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
