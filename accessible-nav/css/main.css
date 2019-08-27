@@ -1,0 +1,186 @@
+:root {
+	--max-sub-nav-items: 7;
+  --nav-item-height: 4.125em;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  margin-top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+	padding: .0625em;
+}
+
+nav > ul > li {
+  flex: 0 0 100%;
+	position: relative;
+	z-index: 5;
+}
+
+@media only screen and (min-width: 60em) {
+  nav,
+  nav > ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    min-height: 0;
+		background-image: url(../img/bg-pea.jpg);
+		background-position: center;
+		background-size: cover;
+		transition: all .2s ease;
+  }
+
+  nav:hover:not(:active) {
+		min-height: calc(var(--max-sub-nav-items) * var(--nav-item-height));
+  }
+
+  nav > ul > li {
+    flex: 1 1 1em;
+  }
+
+	nav ul li ul a {
+		padding-left: .5em;
+	}
+}
+
+nav a {
+  display: block;
+	height: 3em;
+	padding: .5em;
+  color: #000;
+	text-align: center;
+  background: #fff;
+}
+
+nav li:focus-within a:focus,
+nav li:focus-within a:hover,
+nav li:hover a:focus,
+nav li:hover a:hover {
+  background: #eee;
+}
+
+nav li:hover a:active {
+	background: #faa;
+}
+
+nav li li {
+  height: 0;
+  padding: 0;
+	overflow: hidden;
+  opacity: 0;
+	transition: all .3s ease;
+}
+
+nav li:hover li,
+nav li:focus-within li {
+  padding: .25em 0 0 0;
+  height: auto;
+  background: rgba(255, 255, 255, .75);
+  opacity: 0.95;
+}
+
+nav li li a {
+}
+
+nav li:hover li a,
+nav li:focus-within li a {
+  background: rgba(255, 255, 255, 1);
+  transition: all .3s ease;
+}
+
+
+nav li:focus-within li,
+nav li:active ul,
+nav li:active li,
+nav li:hover ul,
+nav li:hover li {
+  position: static;
+}
+
+nav li ul a {
+  padding-left: 1.5em;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+[hidden] {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  position: static;
+  display: block;
+  margin: 5em auto;
+  padding: 1em;
+  background: pink;
+  min-width: 50%;
+  max-width: 100%;
+  white-space: inherit;
+  text-align: center;
+}
+
+nav a.visuallyhidden.focusable:active,
+nav a.visuallyhidden.focusable:focus {
+  position: relative;
+  left: 10em;
+  top: 10em;
+  display: block;
+  z-index: 2;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		Ziele mittels :target kenntlich machen
+	</title>
+	<style>
+		:target>h2 {
+			animation-name: targetArticle;
+			animation-iteration-count: 3;
+			animation-duration: 2s;
+			outline: .25em solid white;
+			animation-timing-function: ease-in-out;
+			animation-direction: alternate;
+		}
+
+		@keyframes targetArticle {
+			from {
+				outline-color: red;
+			}
+
+			to {
+				outline-color: white;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Einleitung</h1>
+	<p>Oft ist es für benutzer verwirrend, wenn man seiteninternen Links folgt und anscheinend nichts passiert. Mit dem CSS-Selektor <code>:target</code> lassen sich die Ziele von Links auswählen und gestalten.</p>
+	<h1>Ziele mittels <code>:target</code> kenntlich machen</h1>
+	<ul>
+		<li><a href="#article01">Beispielartikel 1</a></li>
+		<li><a href="#article02">Beispielartikel 2</a></li>
+		<li><a href="#article03">Beispielartikel 3</a></li>
+		<li><a href="#article04">Beispielartikel 4</a></li>
+	</ul>
+	<article id="article01">
+		<h2>Beispielartikel 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa, unde perspiciatis quaerat possimus autem. Ratione beatae officiis neque quis porro eveniet, harum, pariatur facilis alias nihil tenetur hic perspiciatis.</p>
+	</article>
+	<article id="article02">
+		<h2>Beispielartikel 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa, unde perspiciatis quaerat possimus autem. Ratione beatae officiis neque quis porro eveniet, harum, pariatur facilis alias nihil tenetur hic perspiciatis.</p>
+	</article>
+	<article id="article03">
+		<h2>Beispielartikel 3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa, unde perspiciatis quaerat possimus autem. Ratione beatae officiis neque quis porro eveniet, harum, pariatur facilis alias nihil tenetur hic perspiciatis.</p>
+	</article>
+	<article id="article04">
+		<h2>Beispielartikel 4</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa, unde perspiciatis quaerat possimus autem. Ratione beatae officiis neque quis porro eveniet, harum, pariatur facilis alias nihil tenetur hic perspiciatis.</p>
+	</article>
+</body>
+
+</html>

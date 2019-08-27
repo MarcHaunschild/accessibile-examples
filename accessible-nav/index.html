@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Nav</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+		body {
+			max-width: 40em;
+			margin: 0 auto;
+		}
+		code {
+			display: inline-block;
+			border-radius: .375em;
+			padding: 0 .5em;
+			font-size: 1.25em;
+			color: #008;
+			background: aliceblue;
+		}
+	</style>
+</head>
+
+<body>
+  <main>
+  	<h1>Responsive Accessible Dropdown Navigation without JavaScript (pure CSS)</h1>
+  	<p style="background: #ffa;padding: 1em;text-align: center;"><strong>Try it? Click here for the <a href="seite-1.html">Demo</a></strong></p>
+  	<p style="background: #ffa;padding: 1em;text-align: center;"><strong>Like it? Click here for the <a href="https://github.com/MarcHaunschild/accessible-nav">GitHub-Repo</a></strong></p>
+
+  	<h2>What is this for?</h2>
+
+  	<h3>Sites with long pages.</h3>
+  	<p>This navigation bar is made for small sites with only a few, but long pages, that need their own table of content (like Wikipedia).</p>
+  	<p>So it's good for tutorials, short stories, sites with pages that have the look and feel of single-page-sites, but using more than just one single page.</p>
+
+  	<h3>Sites with sub pages</h3>
+  	<p>When you have a site with different topics and for each topic a main page and several sub pages, you can also use this navigation.</p>
+  	<p>The problem is, that <a href="https://caniuse.com/#feat=css-focus-within">some browsers do not support <code>focus-within</code></a>. For users with these browsers you should provide links to the subpages on the main topic page and all sub pages.</p>
+  	<p>By the way: as a user I personally like redundant navigation possibilities.</p>
+
+  	<h2>What is it doing?</h2>
+  	<p>The navigation has links to pages and in nested lists links to the chapters or sections of these pages.</p>
+  	<p>The links to the pages are always visible, the links to the chapters can be reached with mouse (hovering the nav bar) and keyboard. Keyboard access works only in browsers, that do support <code>focus-within</code>. As a fallback for older browsers I recommend a table of contents on each page.</p>
+  	<p>Pretty much the behaviour that you are used to.</p>
+
+  	<h2>How can I use it?</h2>
+  	<p>If you are using a <code>nav</code>-Element for your main navigation (what you should do) and a nested list as a container for the links in the navigation, this navigation has all it needs!</p>
+  	<p>Just copy the css into your own css file or copy my css into your web space and reference it from your html documents like this:</p>
+  	<p><code>&lt;link rel="stylesheet" href="path/to/main.css"&gt;</code></p>
+  </main>
+</body>
+</html>
