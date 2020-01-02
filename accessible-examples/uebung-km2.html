@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Accessibility rulez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /* Beschriftungen über das Eingabefeld setzen
+       (funktioniert auch, wenn die Text-Richtung wie in arabischen
+       Seiten von rechts nach links ist) */
+        label {
+            display: block;
+        }
+
+        /* Selektor um die Container
+       für die unterschiedlichen Eingabe-Typen auszuwählen */
+        form [class$="container"] {
+            background: #ddd;
+        }
+        form [class^="select"] {
+            background: #eee;
+        }
+        [aria-current="page"] {
+            border: 1px solid red;
+        }
+        [class$="container"] {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        [class$="container"] > *:nth-child(1) {
+            flex: 1 2 30rem;
+        }
+        [class$="container"] > *:nth-child(2) {
+            flex: 2 1 60rem;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="skipNav">
+        <li><a href="#ID_mainSearch">Search</a></li>
+        <li><a href="#ID_mainContent">Main Content</a></li>
+    </ul>
+    <header>
+        <h1>
+            <img src="myLogo" alt="mhis.de">
+        </h1>
+        <p class="slogan">web designed for YOU!</p>
+    </header>
+    <nav>
+        <h2>Main Navigation</h2>
+        <ul>
+            <li><a href="#">Link No. 1</a></li>
+            <li><a href="#">Link No. 2</a></li>
+            <li><a href="#">Link No. 3</a></li>
+            <li><a href="#">Link No. 4</a></li>
+            <li><a href="#">Link No. 5</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <header>
+                <h2>Accessibility rulez</h2>
+                <p>Accessibility</p>
+            </header>
+            <details>
+                <summary>You can open me</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, delectus quas, deleniti est mollitia voluptates, impedit ipsam sint laboriosam nam doloremque. Sint reiciendis aut ratione, alias, saepe eaque magni distinctio?</p>
+                <p>Ullam non numquam optio, accusantium maiores, quam sint blanditiis commodi totam alias esse! Consequuntur temporibus rerum, doloremque perspiciatis minus asperiores incidunt deleniti soluta doloribus, delectus sint. Quis, sit tenetur provident.</p>
+                <p>Hic exercitationem numquam, incidunt sed corporis, voluptates ex veniam reiciendis odio officia. Consectetur id in quidem animi, commodi libero nam, perferendis, quibusdam iusto non natus cupiditate mollitia nesciunt quaerat suscipit!</p>
+            </details>
+            <details>
+                <summary>You can open me</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, delectus quas, deleniti est mollitia voluptates, impedit ipsam sint laboriosam nam doloremque. Sint reiciendis aut ratione, alias, saepe eaque magni distinctio?</p>
+                <p>Ullam non numquam optio, accusantium maiores, quam sint blanditiis commodi totam alias esse! Consequuntur temporibus rerum, doloremque perspiciatis minus asperiores incidunt deleniti soluta doloribus, delectus sint. Quis, sit tenetur provident.</p>
+                <p>Hic exercitationem numquam, incidunt sed corporis, voluptates ex veniam reiciendis odio officia. Consectetur id in quidem animi, commodi libero nam, perferendis, quibusdam iusto non natus cupiditate mollitia nesciunt quaerat suscipit!</p>
+            </details>
+            <details>
+                <summary>You can open me</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, delectus quas, deleniti est mollitia voluptates, impedit ipsam sint laboriosam nam doloremque. Sint reiciendis aut ratione, alias, saepe eaque magni distinctio?</p>
+                <p>Ullam non numquam optio, accusantium maiores, quam sint blanditiis commodi totam alias esse! Consequuntur temporibus rerum, doloremque perspiciatis minus asperiores incidunt deleniti soluta doloribus, delectus sint. Quis, sit tenetur provident.</p>
+                <p>Hic exercitationem numquam, incidunt sed corporis, voluptates ex veniam reiciendis odio officia. Consectetur id in quidem animi, commodi libero nam, perferendis, quibusdam iusto non natus cupiditate mollitia nesciunt quaerat suscipit!</p>
+            </details>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, sequi, quos? Commodi ducimus labore neque ut atque facilis, temporibus, iusto nobis libero dolorem repellat, deserunt vero tenetur cumque amet aspernatur?</p>
+            <p>Aliquam sequi necessitatibus totam cumque nihil ipsa, blanditiis similique in laudantium possimus, deserunt dolor quasi assumenda cum molestiae ratione quos asperiores! Eaque consequatur omnis facilis, sunt doloribus voluptate dicta quidem.</p>
+            <figure>
+                <img src="myPic.jpg" alt="schwarz-weiß-Fotografie mit Flecken und Kratzern">
+                <figcaption>Porträt eines stark gealterten Dorian Gray</figcaption>
+            </figure>
+            <p>Adipisci tempora blanditiis laborum modi quasi, voluptate doloribus nobis aperiam omnis, sequi porro sunt quae eveniet, cum officiis expedita quod veritatis eaque animi doloremque? Ipsam veritatis eveniet, voluptatum id reiciendis.</p>
+            <p>Blanditiis reprehenderit, quae nisi neque magni fugit dolores delectus dicta distinctio facilis id ipsum eveniet molestiae beatae velit inventore ipsa voluptas dignissimos soluta, fuga deleniti. Dignissimos alias quaerat, eligendi. Et.</p>
+            <p>Rem corporis adipisci ut, alias modi aliquid! Magnam, ullam, animi hic, pariatur rem fugit praesentium est officia nostrum illo sapiente. Tempore mollitia excepturi iure quis est modi qui adipisci fugiat.</p>
+            <p>Placeat eaque ipsam animi quisquam fugit cupiditate sapiente voluptates architecto ad voluptatem eum, in minima totam similique deserunt magni reprehenderit dignissimos, nesciunt praesentium. Explicabo, reiciendis, sequi autem a possimus blanditiis!</p>
+            <p>Esse enim recusandae ea laboriosam tempore temporibus nulla mollitia, nobis maiores corporis quam exercitationem est in voluptate facere aperiam impedit distinctio, aut ex culpa repudiandae! Illo quo a repudiandae fugiat.</p>
+            <p>Vel animi eum minus est fugit voluptatibusbeatae quam cum ex quidem sapiente itaque, quisquam minima quaerat non doloribus necessitatibus tenetur distinctio. Mollitia cupiditate omnis, ad ea commodi dolor itaque!</p>
+            <footer>
+                <dl>
+                    <dt>Autor</dt>
+                    <dd>Marc Haunschild</dd>
+                    <dt>Datum</dt>
+                    <dd>23.10.2019</dd>
+                </dl>
+            </footer>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li aria-current="page"><a>3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </article>
+        <aside>
+            <h2>
+                weiterführende Informationen
+            </h2>
+            <ul>
+                <li><a href="#">Über den Autor</a></li>
+                <li><a href="#">Über die Bilder</a></li>
+                <li><a href="#">Vernstaltungen</a></li>
+                <li><a href="#">Geschichte des Dorian Gray</a></li>
+                <li><a href="#">Museum of Modern Art (MMOA)</a></li>
+            </ul>
+        </aside>
+    </main>
+    <form method="post" id="nca-form">
+        <h2 class="ncagreen">Kontakt</h2>
+        <!-- <div class="select-container">
+            <label for="reason">Kontaktgrund</label>
+            <select id="reason">
+                <option value="email">E-Mail</option>
+                <option value="lunch">Lunch</option>
+                <option value="call">Rückruf</option>
+            </select>
+        </div> -->
+        <p class="hint" aria-hidden="true">Felder mit einem Sternchen (*) sind Pflichtfelder</p>
+        <div class="radio-container">
+            <fieldset>
+                <legend><h3>Choose your sex</h3></legend>
+                <input type="radio" id="ID_female" name="sex"><label for="ID_female">w</label>
+                <input type="radio" id="ID_male" name="sex"><label for="ID_male">m</label>
+                <input type="radio" id="ID_div" name="sex"><label for="ID_div">d</label>
+            </fieldset>
+        </div>
+        <div class="input-container">
+            <label for="namefield">Name <span aria-hidden="true">*</span></label>
+            <input id="namefield" placeholder="Max Mustermann" required="" autocomplete="name">
+        </div>
+        <div class="input-container">
+            <label for="emailfield">Email-Adresse *</label>
+            <input id="emailfield" placeholder="info@example.com" required="" type="email" autocomplete="email">
+        </div>
+        <div class="input-container">
+            <label for="phone">Telefonnummer</label>
+            <input id="phone" placeholder="01234-567890" type="tel" autocomplete="tel">
+        </div>
+        <div class="textarea-container">
+            <label for="messagefield">Ihre Nachricht</label>
+            <textarea id="messagefield" rows="5" placeholder="Schreib was nettes"></textarea>
+        </div>
+        <div class="submit-container">
+            <button>senden</button>
+        </div>
+    </form>
+</body></html>

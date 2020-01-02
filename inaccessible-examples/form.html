@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title>Formular</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    [required] {
-      border: 4px solid #666;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>Formular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        [required] {
+            border: .25em solid red;
+        }
+    </style>
 </head>
 
 <body>
-  <form>
-    <p>
-      Name:
-      <input required>
-    </p>
-    <p>
-      Nachname:
-      <input>
-    </p>
-    <p>
-      Alter:
-      <input>
-    </p>
-    <p>
-      PLZ:
-      <input>
-    </p>
-    <p>
-      Ort:
-      <input>
-    </p>
-    <p>
-      <input value="Senden">
-    </p>
-  </form>
-</body>
-</html>
+    <form action="#">
+        <p>
+            Name:
+            <input required autocomplete="given-name">
+        </p>
+        <p>
+            Nachname:
+            <input required autocomplete="family-name">
+        </p>
+        <p>
+            Alter:
+            <input>
+        </p>
+        <p>
+            PLZ:
+            <input autocomplete="postal-code">
+        </p>
+        <p>
+            Ort:
+            <input autocomplete="address-level2">
+        </p>
+        <p>
+            <input value="Senden">
+        </p>
+    </form>
+</body></html>
